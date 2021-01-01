@@ -1,0 +1,44 @@
+{
+    "author": "Kıta Yazılım & Alelma Elektronik",
+    "description": "Kaliteli doğal taze ve lezzetli bal ile türkiye ve almanyada tercihiniz.",
+    "keywords": "almanya, germany, bal, honey, lezzet, tat, arı, bee, arıcılık, beekeper",
+    "sitename": "Asbal Turkuaz GmbH",
+    "email": "info@asbal.eu",
+    "tel": "012326465656",
+    "fax": "012345678923",
+    "adres": "Thyssenstr. 7-17 D-13407 Berlin",
+    "copyright": "Tüm hakları saklıdır. 2020 &copy <a href='https://kitayazilim.com' target='_blank' rel='noreferrer'>Kıta Yazılım</a> | <a href='https://alelma.com.tr' target='_blank' rel='noreferrer'>Alelma</a>",
+    "bizeulasin": "Bize Ulaşın",
+    "calismasaatleri": "Çalışma Saatleri",
+    "saatler": [
+        {
+            "durum": "Pazartesi – Cuma : 8.30 – 18.00"
+        },
+        {
+            "durum": "Cumartesi : Kapalı"
+        },
+        {
+            "durum": "Pazar : Kapalı"
+        },
+        {
+            "durum": "Tatil Günleri : Kapalı"
+        }
+    ],
+    "socials": [
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/adres/",
+            "icon": "fa-instagram"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/adresiniz",
+            "icon": "fa-facebook-f"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://www.twitter.com/channel/adresiniz",
+            "icon": "fa-twitter"
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+---
+layout: layouts/base.njk
+tags: about
+eleventyNavigation:
+  key: Hakkımızda
+  order: 2
+  aka: hakkimiz
+
+############ Hakkımızda ############
+baslik: Hakkımızda
+icerikbaslik: Gözalıcı Eğitim Ortamı
+icerikaltbaslik: Çocuğunuz için sağlanabilecek en optimize ortam
+hakkimizdayazi: Hakkımızda yazısı detaylı şekilde burada görüntülenecektir. mümkün olduğunca izah edici bilgilendirici ve aydınlatıcı olmalı
+hakkimizdabilgiler:
+    -
+        Bilgilendirme 1
+    -
+        Bilgilendirme 2
+    -
+        Bilgilendirme 3
+    -
+        Bilgilendirme 4
+    -
+        Bilgilendirme 5
+
+
+############ İçerik ############
+alticerikbaslik: Eğitim Planlamamız
+alticerikyazi: Eğitim planı ya da detayları hakkında kısa ve öz <br> bilgilendirme yapılabilecek alandır.
+alticerikbuton: Bize Yazın
+butonurl: /iletisim
+
+############ İstatistikler ############
+stats:
+    -
+        icon: flaticon-teacher
+        renk: bg-primary
+        sayi: 10
+        yazi: Uzman Eğitmen
+    -
+        icon: flaticon-family
+        renk: bg-secondary
+        sayi: 35
+        yazi: Mutlu Ailemiz
+    -
+        icon: flaticon-children
+        renk: bg-tertiary
+        sayi: 41
+        yazi: Öğrencilerimiz
+
+
+############ Detaylar ############
+detaylar:
+    -
+        id: 1
+        baslik: Felsefemiz
+        icerik: Felsefe hakkında  bilgi yazısı girilecek
+    -
+        id: 2
+        baslik: Organizasyonumuz
+        icerik: Organizasyon hakkında bilgi yazısı girilecek
+    -
+        id: 3
+        baslik: İş ortaklerımız ve takımımız
+        icerik: Konuyl ilgili bilgilendirme yazısı girilecek
+
+detaylaryanbaslik: Nitelikli Personel
+detaylaryanaltbaslik: Konuyla ilgili alt başlık
+detaylaryanyazi2: Konu hakkında detaylı yazı alanı
+detaylaryanbuton: İletişim
+detaylaryanbuton2: Ekibimiz 
+butonekip: link gelecek
+
+---
+
+<!--Page Title-->
+<section class="page-title centred" style="background-image: url({{'/assets/images/background/page-title.jpg' | url}});">
+    <div class="auto-container">
+        <div class="content-box">
+            <div class="title">
+                <h1 class="lang" key="hakkimiz">Hakkımızda</h1>
+            </div>
+            <ul class="bread-crumb clearfix">
+                <li>
+                    <a href="/" class="lang" key="anasayfa">Anasayfa</a>
+                </li>
+                <li class="lang" key="hakkimiz">Hakkımızda</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!-- about-style-two -->
+<section class="about-style-two">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-5 col-md-12 col-sm-12 image-column">
+                <div class="image_block_2">
+                    <div class="image-box">
+                        <figure class="image image-1"><img src="{{'/assets/images/resource/about-1.jpg' | url}}" alt=""></figure>
+                        <figure class="image image-2"><img src="{{'/assets/images/resource/about-2.jpg' | url}}" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 content-column">
+                <div class="content_block_3">
+                    <div class="content-box">
+                        <div class="sec-title style-two">
+                            <p class="lang" key="hakkimizdaaltbaslik">{{hakkimizda.altbaslik}}</p>
+                            <h2 class="lang" key="hakkimizbaslik">{{hakkimizda.baslik}}</h2>
+                        </div>
+                        <div class="tabs-box">
+                            <div class="tab-btn-box">
+                                <ul class="tab-btns tab-buttons clearfix">
+                                    <li class="tab-btn active-btn" data-tab="#tab-1">
+                                        <h5 class="lang" key="firmatarihi">{{hakkimizda.firmatarihi}}</h5>
+                                    </li>
+                                    <li class="tab-btn" data-tab="#tab-2">
+                                        <h5 class="lang" key="hakkimiz">{{hakkimizda.hakkimiz}}</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs-content">
+                                <div class="tab active-tab" id="tab-1">
+                                    <div class="inner-box">
+                                        <div class="inner" style="padding-left:0">
+                                            <div class="text">
+                                                <p class="lang" key="firmatarihikisayazi">{{hakkimizda.firmatarihikisayazi}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab" id="tab-2">
+                                    <div class="inner-box">
+                                        <div class="inner" style="padding-left:0">
+                                            <div class="text">
+                                                <p class="lang" key="hakkimizuzunyazi"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about-style-two end -->
