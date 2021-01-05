@@ -1,0 +1,8 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+UserAgent: * 
+Disallow:
+{% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+Sitemap:{{metadata.url}}sitemap.xml

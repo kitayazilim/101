@@ -1,55 +1,18 @@
 ---
 layout: layouts/base.njk
+tags: anasayfa
 eleventyNavigation:
   key: Anasayfa
   order: 1
   aka: anasayfa
 
-############ Slaytlar başlangıç ############
-slides:
-  -
-    bgimage: assets/images/banner/banner-1.jpg
-    subject: Arıcılık
-    h1: Taze & Doğal
-    content: Organik, ikliminin en iyi koşullarında elde ediyoruz.
-    aka: slide1
-    link:
-      text: Tıklayın
-      url: http://www.bilmemne.com
-      button: theme-btn-two
-    link2:
-      text: Mağazaya Git
-      url: http://www.bilmemne.com
-      button: banner-btn-one
-  -
-    bgimage: assets/images/banner/banner-2.jpg
-    subject: Arıcılık
-    h1: Taze & Doğal
-    content: Organik. ikliminin en iyi koşullarında elde ediyoruz.
-    aka: slide2
-    link:
-      text: Tıklayın
-      url: http://www.bilmemne.com
-      button: theme-btn-two
-    link2:
-      text: Mağazaya Git
-      url: http://www.bilmemne.com
-      button: banner-btn-one
-  -
-    bgimage: assets/images/banner/banner-3.jpg
-    subject: Arıcılık
-    h1: Taze & Doğal
-    content: Organik. ikliminin en iyi koşullarında elde ediyoruz.
-    aka: slide3
-    link:
-      text: Tıklayın
-      url: http://www.bilmemne.com
-      button: theme-btn-two
-    link2:
-      text: Mağazaya Git
-      url: http://www.bilmemne.com
-      button: banner-btn-one
+############ Hero başlangıç ############
+welcome: Kıta Yazılıma hoş geldiniz.
+heroheader: Yazılım Çözümleri ve Destek Hizmetleri
+heroalt: Satış öncesi ve sonrası herzaman firmanızın yanında olmaya devam ediyoruz
 
+############ Hizmetler başlangıç ############
+hizmetlerimiz: Hizmetlerimiz
 
 ############ Kartlar başlangıç ############
 cards:
@@ -85,7 +48,7 @@ cards:
 ############ Hakkımızda başlangıç ############
 hakkimizda:
   hakkimiz: Hakkımızda
-  hakkimizkisayazi: Halen Türkiye’de toptan bal ticaretini devam ettiren firmamız, 2006 yılında Almanya’nın Berlin şehrinde bir paketleme tesisi kurarak faaliyetlerine burada devam etme kararı almıştır.
+  hakkimizkisayazi: Yazılım sektöründe edinmiş olduğumuz 15 yıllık tecrübemiz ışığında 2018 yılında kurulduk. Kıta Yazılım olarak genç, yenilikçi, dinamik bir ekipten oluşuyoruz.
   firmatarihi: Firma Tarihi
   firmatarihikisayazi: Firmamız 1982 yılından bu yana Muğla, Marmaris, Köyceğiz ballarının Doğu Anadolu yaylalarının seçkin ballarının toptan ve perakende ticaretini yapmaktadır.
   altbaslik: Bizi Tanıyın
@@ -94,6 +57,7 @@ hakkimizda:
   url: /hakkimizda
 
 ############ Testimonal başlangıç ############
+sizdengelenler: Sizden Gelenler
 testimonal: Ne söylediler
 testimonals:
   -
@@ -117,8 +81,6 @@ testimonals:
     soylenen: Kişinin söylediği yazı buraya yazılacak. 
     resim: img/team/team1.jpg
 
-
-
 ############ İmkanlar başlangıç ############
 saglananlarbaslik: Neler Sağlıyoruz
 saglananlaralt : Çocuğunuz için en iyisi
@@ -126,6 +88,39 @@ saglananlarimage: img/imkanlar.jpg
 
 urunlerimiz: Ürünlerimiz
 magazaziyaret : Mağazamızı Ziyaret Edin
+
+############ Referanslar başlangıç ############
+referanslarimiz: Referanslarımız
+referanslaralt: Bizi Tercih Ettiler
+referanslar:
+  -
+    firma: Japex
+    sektor: Dış Ticaret
+    image: /assets/images/referanslar/japex.png
+  -
+    firma: Akkar Lojistik
+    sektor: Lojistik
+    image: /assets/images/referanslar/akkar.png
+  -
+    firma: Mevlüt Pilavcısı
+    sektor: Esnaf
+    image: /assets/images/referanslar/mevlutpilavcisi.png
+  -
+    firma: Merylog
+    sektor: Lojistik
+    image: /assets/images/referanslar/merylog.png
+  -
+    firma: Alelma
+    sektor: Elektronik
+    image: /assets/images/referanslar/alelma.png
+  -
+    firma: Lalebahçesi Anaokulu
+    sektor: Eğitim
+    image: /assets/images/referanslar/lalebahcesi.png
+  -
+    firma: Asbal
+    sektor: Dış Ticaret
+    image: /assets/images/referanslar/asbal.png
 ---
 
 {# {% set maxPosts = collections.posts.length | min(3) %}
@@ -137,581 +132,357 @@ magazaziyaret : Mağazamızı Ziyaret Edin
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p> #}
 
-<!-- banner-section -->
-<section class="banner-section style-two">
-  <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
-    {%- for slide in slides -%}
-      <div class="slide-item">
-        <div class="image-layer" style="background-image:url({{slide.bgimage}})"></div>
-        <div class="auto-container">
-          <div class="content-box">
-            <h1>
-              <label class="lang" key="{{slide.aka}}h1">{{slide.h1}}</label>
-              <span class="lang" key="{{slide.aka}}subject">{{slide.subject}}</span></h1>
-            <h2 class="lang" key="{{slide.aka}}content">{{slide.content}}</h2>
-            <div class="btn-box">
-              <a href="{{slide.link.url | url}}" class="{{slide.link.button}} lang" key="{{slide.aka}}linktext">{{slide.link.text}}</a>
-              <a href="{{slide.link2.url | url}}" class="{{slide.link2.button}} lang" key="{{slide.aka}}link2text">{{slide.link2.text}}</a>
-            </div>
-          </div>
-        </div>
+<div class="hero-wrap js-fullheight" style="background-image: url('{{'assets/images/bg_1.jpg' | url}}');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+      <div class="col-md-7 ftco-animate">
+        <span class="subheading lang" key="welcome">{{welcome}}</span>
+        <h1 class="mb-4 lang" key="heroheader">{{heroheader}}</h1>
+        <p class="caps lang" key="heroalt">{{heroalt}}</p>
+        <p class="mb-0">
+          <a href="#" class="btn btn-primary lang" key="hizmetler">Hizmetlerimiz</a>
+          <a href="#" class="btn btn-white lang" key="hakkimiz">Hakkımızda</a>
+        </p>
       </div>
-    {%- endfor -%}
-  </div>
-</section>
-<!-- banner-section end -->
-
-<!-- feature-style-two ---->
-<section class="feature-style-two centred">
-  <div class="auto-container">
-    <div class="sec-title style-two">
-      <p>Who We Are</p>
-      <h2>Best features</h2>
     </div>
-    <div class="row clearfix">
-      <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-        <div class="feature-block-two">
-          <div class="inner-box">
-            <div class="content-box">
-              <div class="icon-box">
-                <i class="flaticon-flower"></i>
-              </div>
-              <h5>Flowers produce</h5>
-              <p>Sed ut perspiciatis unde omnis natus volup</p>
-              <div class="link">
-                <a href="index-2.html">
-                  <i class="far fa-arrow-right"></i>
-                </a>
-              </div>
+  </div>
+</div>
+
+<section class="ftco-section ftco-no-pb ftco-no-pt">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7"></div>
+      <div class="col-md-5 order-md-last">
+        {# <div class="login-wrap p-4 p-md-5">
+          <h3 class="mb-4">Register Now</h3>
+          <form action="#" class="signup-form">
+            <div class="form-group">
+              <label class="label" for="name">Full Name</label>
+              <input type="text" class="form-control" placeholder="John Doe">
             </div>
-            <div class="overlay-content" style="background-image: url(assets/images/resource/block-bg-1.jpg);">
-              <div class="icon-box">
-                <i class="flaticon-flower"></i>
-              </div>
-              <h5>Flowers produce</h5>
-              <p>But I must explain to you how all thimistaken idea of denou pleas</p>
-              <div class="link">
-                <a href="index-2.html">
-                  <i class="far fa-arrow-right"></i>
-                </a>
-              </div>
+            <div class="form-group">
+              <label class="label" for="email">Email Address</label>
+              <input type="text" class="form-control" placeholder="johndoe@gmail.com">
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-        <div class="feature-block-two">
-          <div class="inner-box">
-            <div class="content-box">
-              <div class="icon-box">
-                <i class="flaticon-bee"></i>
-              </div>
-              <h5>Natural Bees</h5>
-              <p>Sed ut perspiciatis unde omnis natus volup</p>
-              <div class="link">
-                <a href="index-2.html">
-                  <i class="far fa-arrow-right"></i>
-                </a>
-              </div>
+            <div class="form-group">
+              <label class="label" for="password">Password</label>
+              <input id="password-field" type="password" class="form-control" placeholder="Password">
             </div>
-            <div class="overlay-content" style="background-image: url(assets/images/resource/block-bg-1.jpg);">
-              <div class="icon-box">
-                <i class="flaticon-bee"></i>
-              </div>
-              <h5>Natural Bees</h5>
-              <p>But I must explain to you how all thimistaken idea of denou pleas</p>
-              <div class="link">
-                <a href="index-2.html">
-                  <i class="far fa-arrow-right"></i>
-                </a>
-              </div>
+            <div class="form-group">
+              <label class="label" for="password">Confirm Password</label>
+              <input id="password-field" type="password" class="form-control" placeholder="Confirm Password">
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-        <div class="feature-block-two">
-          <div class="inner-box">
-            <div class="content-box">
-              <div class="icon-box">
-                <i class="flaticon-hive"></i>
-              </div>
-              <h5>Bees seal cells</h5>
-              <p>Sed ut perspiciatis unde omnis natus volup</p>
-              <div class="link">
-                <a href="index-2.html">
-                  <i class="far fa-arrow-right"></i>
-                </a>
-              </div>
+            <div class="form-group d-flex justify-content-end mt-4">
+              <button type="submit" class="btn btn-primary submit">
+                <span class="fa fa-paper-plane"></span></button>
             </div>
-            <div class="overlay-content" style="background-image: url(assets/images/resource/block-bg-1.jpg);">
-              <div class="icon-box">
-                <i class="flaticon-hive"></i>
-              </div>
-              <h5>Bees seal cells</h5>
-              <p>But I must explain to you how all thimistaken idea of denou pleas</p>
-              <div class="link">
-                <a href="index-2.html">
-                  <i class="far fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-        <div class="feature-block-two">
-          <div class="inner-box">
-            <div class="content-box">
-              <div class="icon-box">
-                <i class="flaticon-beehive"></i>
-              </div>
-              <h5>Well products</h5>
-              <p>Sed ut perspiciatis unde omnis natus volup</p>
-              <div class="link">
-                <a href="index-2.html">
-                  <i class="far fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="overlay-content" style="background-image: url(assets/images/resource/block-bg-1.jpg);">
-              <div class="icon-box">
-                <i class="flaticon-beehive"></i>
-              </div>
-              <h5>Well products</h5>
-              <p>But I must explain to you how all thimistaken idea of denou pleas</p>
-              <div class="link">
-                <a href="index-2.html">
-                  <i class="far fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+          </form>
+          <p class="text-center">Already have an account?
+            <a href="#signin">Sign In</a>
+          </p>
+        </div> #}
       </div>
     </div>
   </div>
 </section>
-<!-- feature-style-two end -->
 
-<!-- about-style-two -->
-<section class="about-style-two">
-  <div class="auto-container">
-    <div class="row clearfix">
-      <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-        <div class="image_block_2">
-          <div class="image-box">
-            <figure class="image image-1"><img src="assets/images/resource/about-1.jpg" alt=""></figure>
-            <figure class="image image-2"><img src="assets/images/resource/about-2.jpg" alt=""></figure>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-        <div class="content_block_3">
-          <div class="content-box">
-            <div class="sec-title style-two">
-              <p class="lang" key="hakkimizdaaltbaslik">{{hakkimizda.altbaslik}}</p>
-              <h2 class="lang" key="hakkimizbaslik">{{hakkimizda.baslik}}</h2>
-            </div>
-            <div class="tabs-box">
-              <div class="tab-btn-box">
-                <ul class="tab-btns tab-buttons clearfix">
-                  <li class="tab-btn active-btn" data-tab="#tab-1">
-                    <h5 class="lang" key="firmatarihi">{{hakkimizda.firmatarihi}}</h5>
-                  </li>
-                  <li class="tab-btn" data-tab="#tab-2">
-                    <h5 class="lang" key="hakkimiz">{{hakkimizda.hakkimiz}}</h5>
-                  </li>
-                </ul>
-              </div>
-              <div class="tabs-content">
-                <div class="tab active-tab" id="tab-1">
-                  <div class="inner-box">
-                    <div class="inner">
-                      <figure class="image-box"><img src="assets/images/resource/about-3.jpg" alt=""></figure>
-                      <div class="text">
-                        <p class="lang" key="firmatarihikisayazi">{{hakkimizda.firmatarihikisayazi}}</p>
-                      </div>
-                    </div>
-                    <div class="btn-box">
-                      <a href="{{hakkimizda.url | url}}" class="theme-btn-two lang" key="hakkimizdabuton">{{hakkimizda.button}}</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab" id="tab-2">
-                  <div class="inner-box">
-                    <div class="inner">
-                      <figure class="image-box"><img src="assets/images/resource/about-3.jpg" alt=""></figure>
-                      <div class="text">
-                        <p class="lang" key="hakkimizkisayazi">{{hakkimizda.hakkimizkisayazi}}</p>
-                      </div>
-                    </div>
-                    <div class="btn-box">
-                      <a href="{{hakkimizda.url | url}}" class="theme-btn-two lang" key="hakkimizdabuton">{{hakkimizda.button}}</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center pb-4 heading-section ">
+      <h2 class="mb-4 lang" key="ilgilibaşlık" style="width:100%; text-align:center">Yazılım Çözümleri</h2>
+      <p class="lang" key="ilgilitext" style="text-align:center">
+        Üretim ve planlama süreçlerini iyileştirir maliyetleri azaltır zamanın kullanılmasınız optimize eder. E-dönüşüm sistemleri ile faturalar ve evraklarınız artık arşivde
+      </p>
+
     </div>
   </div>
 </section>
-<!-- about-style-two end -->
 
-<!-- shop-section -->
-<section class="shop-section alternat-2 centred">
-  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-  <figure class="image-layer"><img src="assets/images/resource/bee-3.png" alt=""></figure>
-  <div class="auto-container">
-    <div class="sec-title style-two centred">
-      <p class="lang" key="magazaziyaret">{{magazaziyaret}}</p>
-      <h2 class="lang" key="urunlerimiz">{{urunlerimiz}}</h2>
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center pb-4">
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <span class="subheading lang" key="sizinihtiyaciniz">Sizin İhtiyacınız Hangisi?</span>
+        <h2 class="mb-4 lang" key="hizmetlerimiz">{{hizmetlerimiz}}</h2>
+      </div>
     </div>
-    <div class="row clearfix">
-      {% set products = collections.Urunler %}
-      {%- for pro in products -%}
-        <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
-          <div class="shop-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-            <div class="inner-box">
-              <figure class="image-box">
-                <a href="{{pro.url | url}}"><img src="{{pro.data.image | url}}" alt="{{pro.data.title}}"></a>
-              </figure>
-              <div class="lower-content">
-                <h5 style="margin-top:20px">
-                  <a href="{{pro.url | url}}">{{pro.data.title}}</a>
-                </h5>
-              </div>
+    <div class="row">
+      {% set urunler = collections.Urunler %}
+      {%- for item in urunler -%}
+        <div class="col-md-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="{{item.url | url}}" class="img" style="background-image: url({{item.data.image | url}});">
+              <span class="price">{{item.data.kategori}}</span>
+            </a>
+            <div class="text p-4">
+              <h3>
+                <a href="{{item.url | url}}">{{item.data.title}}</a>
+              </h3>
+              <p class="advisor">
+                {{item.data.kisaozet}}
+              </p>
             </div>
           </div>
         </div>
       {%- endfor -%}
     </div>
-    <div class="more-btn">
-      <a href="{{collections.urunler[0].url | url}}" class="theme-btn-two lang" key="tumurunler">Tüm Ürünleri Göster</a>
+  </div>
+</section>
+
+<section class="ftco-section ftco-counter img" id="section-counter" loading="lazy" style="background-image: url({{'/assets/images/bg_4.jpg' | url}});">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18 d-flex align-items-center">
+          <div class="icon">
+            <span class="flaticon-online"></span></div>
+          <div class="text">
+            <strong class="number" data-number="400">0</strong>
+            <span>Online Courses</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18 d-flex align-items-center">
+          <div class="icon">
+            <span class="flaticon-graduated"></span></div>
+          <div class="text">
+            <strong class="number" data-number="4500">0</strong>
+            <span>Students Enrolled</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18 d-flex align-items-center">
+          <div class="icon">
+            <span class="flaticon-instructor"></span></div>
+          <div class="text">
+            <strong class="number" data-number="1200">0</strong>
+            <span>Experts Instructors</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18 d-flex align-items-center">
+          <div class="icon">
+            <span class="flaticon-tools"></span></div>
+          <div class="text">
+            <strong class="number" data-number="300">0</strong>
+            <span>Hours Content</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- shop-section end -->
 
-<!-- feature-style-three -->
-<section class="feature-style-three">
-  <div class="auto-container">
-    <div class="row align-items-center clearfix">
-      <div class="col-lg-4 col-md-12 col-sm-12 content-column">
-        <div class="content_block_4">
-          <div class="content-box">
-            <div class="sec-title style-two">
-              <p>Core Features</p>
-              <h2>Making honey is a complex and unique process</h2>
+<section class="ftco-section ftco-about img">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-12 about-intro">
+        <div class="row">
+          <div class="col-md-6 d-flex">
+            <div class="d-flex about-wrap">
+              <div class="img d-flex align-items-center justify-content-center" style="background-image:url({{'/assets/images/about-1.jpg' | url}});"></div>
+              <div class="img-2 d-flex align-items-center justify-content-center" style="background-image:url({{'/assets/images/about.jpg' | url}});"></div>
             </div>
-            <div class="text">
-              <p>Sed ut perspiciatis unde omnis iste natus volup tatem accusantium doloremque laudant totams reperiam, eaque ipsa quae ab illo inventorety veritatis et qrchitecto beatae vitae
+          </div>
+          <div class="col-md-6 pl-md-5 py-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+                <span class="subheading">E Dönoüşüm ile ilglili yazı gelecek.</span>
+                <h2 class="mb-4">Learn Anything You Want Today</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p>
+                  <a href="#" class="btn btn-primary">Get in touch with us</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section testimony-section bg-light">
+  <div class="overlay" style="background-image: url({{'/assets/images/bg_2.jpg' | url}});"></div>
+  <div class="container">
+    <div class="row pb-4">
+      <div class="col-md-7 heading-section ftco-animate">
+        <span class="subheading lang" key="sizdengelenler">{{sizdengelenler}}</span>
+        <h2 class="mb-4 lang" key="nedediler">{{testimonal}}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container container-2">
+    <div class="row ftco-animate">
+      <div class="col-md-12">
+        <div class="carousel-testimony owl-carousel">
+          {%- for testi in testimonals -%}
+            <div class="item">
+              <div class="testimony-wrap py-4">
+                <div class="text">
+                  <p class="mb-4" style="height:100px">{{testi.soylenen}}</p>
+                  <div class="d-flex align-items-center">
+                    <div class="user-img" style="background-image: url({{'/assets/images/person_1.jpg' | url}})"></div>
+                    <div class="pl-3">
+                      <p class="name">{{testi.soyleyen}}</p>
+                      <span class="position">{{testi.meslek}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-intro ftco-section ftco-no-pb">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <div class="img" style="background-image: url({{'assets/images/bg_4.jpg' | url}});">
+          <div class="overlay"></div>
+          <h2>Ufak Bir slogan</h2>
+          <p>We can manage your dream building A small river named Duden flows by their place</p>
+          <p class="mb-0">
+            <a href="#" class="btn btn-primary px-4 py-3">Enroll Now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section services-section">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
+        <div class="w-100 mb-4 mb-md-0">
+          <span class="subheading">Odoo hakkında yazı gelecek</span>
+          <h2 class="mb-4">We Are StudyLab An Online Learning Center</h2>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <div class="d-flex video-image align-items-center mt-md-4">
+            <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url({{'/assets/images/about.jpg' | url}});">
+              <span class="fa fa-play-circle"></span>
+            </a>
+            <h4 class="ml-4">Learn anything from StudyLab, Watch video</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+            <div class="services">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-tools"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Top Quality Content</h3>
+                <p>A small river named Duden flows by their place and supplies</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+            <div class="services">
+              <div class="icon icon-2 d-flex align-items-center justify-content-center">
+                <span class="flaticon-instructor"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Highly Skilled Instructor</h3>
+                <p>A small river named Duden flows by their place and supplies</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+            <div class="services">
+              <div class="icon icon-3 d-flex align-items-center justify-content-center">
+                <span class="flaticon-quiz"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">World Class &amp; Quiz</h3>
+                <p>A small river named Duden flows by their place and supplies</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+            <div class="services">
+              <div class="icon icon-4 d-flex align-items-center justify-content-center">
+                <span class="flaticon-browser"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Get Certified</h3>
+                <p>A small river named Duden flows by their place and supplies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center pb-4">
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <span class="subheading lang" key="referanslaralt">{{referanslaralt}}</span>
+        <h2 class="mb-4 lang" key="referanslarimiz">{{referanslarimiz}}</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center carousel-referanslar owl-carousel">
+      {%- for ref in referanslar -%}
+        <div>
+          <a class="course-category img d-flex align-items-center justify-content-center" loading="lazy" style="background-image: url({{ref.image | url}});">
+            {# <div style="position:absolute; width:100%; height:100%; background-color: rgb(0, 0, 0, 0.5); border-radius:50%; z-index:-1"></div> #}
+            <div class="text w-100 text-center">
+              {# <h3>{{ref.firma}}</h3>
+              <span>{{ref.sektor}}</span> #}
+            </div>
+          </a>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center pb-4">
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <span class="subheading">Our Blog</span>
+        <h2 class="mb-4">Recent Post</h2>
+      </div>
+    </div>
+    <div class="row d-flex carousel-blog owl-carousel">
+      {% set bloglar = collections.Bloglar | reverse %}
+      {%- for item in bloglar -%}
+        <div class="ftco-animate">
+          <div class="blog-entry">
+            <a href="{{item.url | url}}" class="block-20" style="background-image: url('{{item.data.image | url}}');"></a>
+            <div class="text d-block">
+              <div class="meta">
+                <p>
+                  <a href="#">
+                    <span class="fa fa-calendar mr-2"></span>{{item.data.tarih}}</a>
+                  <a href="#">
+                    <span class="fa fa-user mr-2"></span>{{item.data.yazan}}</a>
+                </p>
+              </div>
+              <h3 class="heading" style="height:66px">
+                <a href="{{item.url | url}}">{{item.data.title}}</a>
+              </h3>
+              <p style="height:85px">{{item.data.ozet}}</p>
+              <p>
+                <a href="{{item.url | url}}" class="btn btn-secondary py-2 px-3 lang" key="dahafazla">Devamı</a>
               </p>
             </div>
-            <ul class="list-item clearfix">
-              <li>One Of Ther Best Honey Providers</li>
-              <li>How To Create A Mobile App In Expoerise</li>
-              <li>Learning Resources Challenging Times</li>
-            </ul>
-            <div class="btn-box">
-              <a href="index-2.html" class="theme-btn-two">visit our shop</a>
-            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
-        <div class="feature-column">
-          <div class="row clearfix">
-            <div class="col-lg-6 col-md-6 col-sm-12 feature-block">
-              <div class="feature-block-three small-block clearfix wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                <div class="inner-box">
-                  <div class="icon-box">
-                    <i class="flaticon-bee-2"></i>
-                  </div>
-                  <h3>Honeycomb</h3>
-                  <p>Sed perspiciatis unde omnis iste natus error volup</p>
-                </div>
-              </div>
-              <div class="feature-block-three wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                <div class="inner-box">
-                  <div class="icon-box">
-                    <i class="flaticon-bee-3"></i>
-                  </div>
-                  <h3>100% Natural Bees</h3>
-                  <p>But must explain to you how this mistaken idea of denounci pleasure and praising pain was born</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 feature-block">
-              <div class="feature-block-three wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                <div class="inner-box">
-                  <div class="icon-box">
-                    <i class="flaticon-honey"></i>
-                  </div>
-                  <h3>well beekeeping</h3>
-                  <p>Quis autem vel eum iure reprehende qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum</p>
-                </div>
-              </div>
-              <div class="feature-block-three small-block wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                <div class="inner-box">
-                  <div class="icon-box">
-                    <i class="flaticon-honey-1"></i>
-                  </div>
-                  <h3>fresh & orginals</h3>
-                  <p>Nor again is there anyone who loves or pursues or desires</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {%- endfor -%}
     </div>
   </div>
 </section>
-<!-- feature-style-three end -->
-
-<!-- video-section -->
-<section class="video-section">
-  <div class="auto-container">
-    <div class="video-inner" style="background-image: url(assets/images/background/video-1.jpg);">
-      <div class="video-content">
-        <div class="inner">
-          <div class="count-outer count-box">
-            <span class="count-text" data-speed="1500" data-stop="600">0</span>
-          </div>
-          <h3>Happy Clients</h3>
-        </div>
-      </div>
-      <div class="video-btn">
-        <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image video-btn" data-caption="">
-          <i class="fas fa-play"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- video-section end -->
-
-<!-- working-process -->
-<section class="working-process centred">
-  <div class="auto-container">
-    <div class="sec-title light style-two centred">
-      <p>Working Process</p>
-      <h2>how dose we works</h2>
-    </div>
-    <div class="row clearfix">
-      <div class="col-lg-4 col-md-6 col-sm-12 process-block">
-        <div class="process-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-          <div class="inner-box">
-            <span class="count-text">01</span>
-            <div class="icon-box">
-              <i class="flaticon-honey-3"></i>
-            </div>
-            <h3>Choose beekeeping</h3>
-            <p>But I must explain to you how this mistaken idea of denouncing pleasure and praising pain was born</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 process-block">
-        <div class="process-block-one wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-          <div class="inner-box">
-            <span class="count-text">02</span>
-            <div class="icon-box">
-              <i class="flaticon-honey-2"></i>
-            </div>
-            <h3>Selected Bees</h3>
-            <p>But I must explain to you how this mistaken idea of denouncing pleasure and praising pain was born</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 process-block">
-        <div class="process-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-          <div class="inner-box">
-            <span class="count-text">03</span>
-            <div class="icon-box">
-              <i class="flaticon-honey-4"></i>
-            </div>
-            <h3>got well product</h3>
-            <p>But I must explain to you how this mistaken idea of denouncing pleasure and praising pain was born</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- working-process end -->
-
-<!-- testimonial-section -->
-<section class="testimonial-section alternat-2">
-  <div class="auto-container">
-    <div class="sec-title style-two">
-      <p class="lang" key="sizdengelenler">Sizlerden Gelenler</p>
-      <h2 class="lang" key="nedediler">Ne söylediler?</h2>
-    </div>
-    <div class="testimonial-inner">
-      <div class="single-item-carousel owl-carousel owl-theme">
-        {%- for say in testimonals -%}
-          <div class="testimonial-block-one">
-            <div class="inner-box">
-              <figure class="author-thumb"><img src="assets/images/resource/testimonial-3.png" alt=""></figure>
-              <div class="text">
-                <p><img src="assets/images/icons/arrow-1.png" alt="">{{say.soylenen}}</p>
-              </div>
-              <div class="author-info">
-                <h4>{{say.soyleyen}}</h4>
-                <span class="designation">{{say.meslek}}</span>
-              </div>
-            </div>
-          </div>
-        {%- endfor -%}
-      </div>
-    </div>
-  </div>
-</section>
-<!-- testimonial-section end -->
-
-<!-- subscribe-section -->
-<section class="subscribe-section">
-  <div class="outer-container">
-    <div class="subscribe-inner">
-      <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-5.png);"></div>
-      <div class="content-box">
-        <div class="sec-title style-two centred">
-          <p>Get More Updates</p>
-          <h2>subscribe newsletters</h2>
-        </div>
-        <div class="text centred">
-          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-            <br/>born and I will give you a complete account of the system, and expound</p>
-        </div>
-        <form action="index-2.html" method="post" class="subscribe-form">
-          <div class="form-group">
-            <input type="email" name="email" placeholder="Enter Your Emaill Address" required="">
-            <button type="submit" class="theme-btn-two">subscribe now</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- subscribe-section end -->
-
-<!-- news-section -->
-<section class="news-section sec-pad">
-  <div class="auto-container">
-    <div class="sec-title">
-      <p>Reads Our Articles</p>
-      <h2>Latest news & blog</h2>
-    </div>
-    <div class="row clearfix">
-      <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-        <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-          <div class="inner-box">
-            <figure class="image-box">
-              <a href="blog-details.html"><img src="assets/images/news/news-1.jpg" alt=""></a>
-            </figure>
-            <div class="lower-content">
-              <h5>
-                <a href="blog-details.html">Smashing Podcast Episo With Mina Markham How Can I Learn React Which Video Conferencie Tools Are Most Accessibls</a>
-              </h5>
-              <ul class="post-info clearfix">
-                <li>
-                  <i class="far fa-calendar-alt"></i>30 Aug 2020</li>
-                <li>
-                  <i class="far fa-comment"></i>
-                  <a href="index.html">Com (05)</a>
-                </li>
-              </ul>
-              <div class="link">
-                <a href="blog-details.html">read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-        <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-          <div class="inner-box">
-            <figure class="image-box">
-              <a href="blog-details.html"><img src="assets/images/news/news-2.jpg" alt=""></a>
-            </figure>
-            <div class="lower-content">
-              <h5>
-                <a href="blog-details.html">Building A Facial Recognition Web Application With React How Can I Learn React Which Video Tools Are Most Accessibls</a>
-              </h5>
-              <ul class="post-info clearfix">
-                <li>
-                  <i class="far fa-calendar-alt"></i>29 Aug 2020</li>
-                <li>
-                  <i class="far fa-comment"></i>
-                  <a href="index.html">Com (06)</a>
-                </li>
-              </ul>
-              <div class="link">
-                <a href="blog-details.html">read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-        <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-          <div class="inner-box">
-            <figure class="image-box">
-              <a href="blog-details.html"><img src="assets/images/news/news-3.jpg" alt=""></a>
-            </figure>
-            <div class="lower-content">
-              <h5>
-                <a href="blog-details.html">Mirage JS Deep Dive Understan ding Timing, Response And Pass rough (Part 3)Can I Learn eact Tools Are Most Accessibls</a>
-              </h5>
-              <ul class="post-info clearfix">
-                <li>
-                  <i class="far fa-calendar-alt"></i>28 Aug 2020</li>
-                <li>
-                  <i class="far fa-comment"></i>
-                  <a href="index.html">Com (02)</a>
-                </li>
-              </ul>
-              <div class="link">
-                <a href="blog-details.html">read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- news-section end -->
-
-<!-- clients-section -->
-<section class="clients-section alternat-2">
-  <div class="auto-container">
-    <div class="auto-container">
-      <div class="clients-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
-        <figure class="clients-logo-box">
-          <a href="index.html"><img src="assets/images/clients/clients-logo-1.png" alt=""></a>
-        </figure>
-        <figure class="clients-logo-box">
-          <a href="index.html"><img src="assets/images/clients/clients-logo-2.png" alt=""></a>
-        </figure>
-        <figure class="clients-logo-box">
-          <a href="index.html"><img src="assets/images/clients/clients-logo-3.png" alt=""></a>
-        </figure>
-        <figure class="clients-logo-box">
-          <a href="index.html"><img src="assets/images/clients/clients-logo-4.png" alt=""></a>
-        </figure>
-        <figure class="clients-logo-box">
-          <a href="index.html"><img src="assets/images/clients/clients-logo-5.png" alt=""></a>
-        </figure>
-        <figure class="clients-logo-box">
-          <a href="index.html"><img src="assets/images/clients/clients-logo-6.png" alt=""></a>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- clients-section end -->

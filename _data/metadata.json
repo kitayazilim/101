@@ -1,20 +1,21 @@
 {
-  "title": "Çekmeköy Lalebahçesi Anaokulu",
-  "url": "https://cekmekoylalebahcesi.com/",
-  "description": "Çekmeköy Lalebahçesi Anaokulu.",
+  "title": "Kıta Yazılım Çözümleri",
+  "url": "http://kitayazilim.com/",
+  "description": "Yazılımda doğru tercih. Kıta yazılım herzaman yanınızda.",
+  "keywords": "yazılım, software, python, django, asp, .net, c#, html, css, javascipt, js, bootstrap,entityframework",
   "feed": {
-    "subtitle": "Çekmeköy Lalebahçesi Anaokulu.",
+    "subtitle": "Kıta Yazılım Çözümleri.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://cekmekoylalebahcesi.com/"
+    "id": "http://kitayazilim.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://cekmekoylalebahcesi.com/feed/feed.json"
+    "url": "http://kitayazilim.com/feed/feed.json"
   },
   "author": {
-    "name": "Kıta Yazılım",
+    "name": "Kıta Yazılım Çözümleri",
     "email": "info@kitayazilim.com",
-    "url": "https://kitayazilim.com/"
+    "url": "http://kitayazilim.com/"
   }
 }
