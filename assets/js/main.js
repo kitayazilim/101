@@ -88,7 +88,7 @@
 			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
 			responsive: {
 				0: {
-					items: 1
+					items: 2
 				},
 				600: {
 					items: 3
@@ -197,7 +197,6 @@
 				$('.number').each(function () {
 					var $this = $(this),
 						num = $this.data('number');
-					console.log(num);
 					$this.animateNumber(
 						{
 							number: num,

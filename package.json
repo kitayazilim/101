@@ -7,7 +7,7 @@
     "watch": "eleventy --watch",
     "sil": "rimraf _site",
     "serve": "eleventy --serve",
-    "dev": "eleventy --serve",
+    "dev": "rimraf _site & eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
@@ -32,5 +32,10 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5"
+  },
+  "dependencies": {
+    "clean-css": "^4.2.3",
+    "jsdom": "^16.4.0",
+    "purgecss": "^3.1.3"
   }
 }

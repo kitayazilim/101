@@ -2,7 +2,6 @@
 permalink: /robots.txt
 eleventyExcludeFromCollections: true
 ---
-UserAgent: * 
-Disallow:
-{% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+UserAgent:* 
+Disallow: 
 Sitemap:{{metadata.url}}sitemap.xml

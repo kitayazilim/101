@@ -24,20 +24,20 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <div style="position:absolute; top:30px; right:10px;">
+        <div style="position:absolute; top:35px; right:10px;">
           <ul class="lang-block" style="list-style-type:none; padding-inline-start: 0px">
             <li style="margin: 0 2px; float:left">
-              <a class="translate" id="de" style="cursor:pointer"><img src="{{'/assets/images/de.png' | url}}" width="30" height="30" alt="de"></a>
+              <a class="translate" id="tr" style="cursor:pointer"><img src="{{'/assets/images/tr.png' | url}}" width="30" height="30" alt="tr"></a>
             </li>
             <li style="margin: 0 2px; float:left">
-              <a class="translate" id="tr" style="cursor:pointer"><img src="{{'/assets/images/tr.png' | url}}" width="30" height="30" alt="tr"></a>
+              <a class="translate" id="de" style="cursor:pointer"><img src="{{'/assets/images/de.png' | url}}" width="30" height="30" alt="de"></a>
             </li>
             <li style="margin: 0 2px; float:left">
               <a class="translate" id="en" style="cursor:pointer"><img src="{{'/assets/images/en.png' | url}}" width="30" height="30" alt="en"></a>
             </li>
           </ul>
         </div>
-        <a class="navbar-brand" href="/"><img src="{{'/assets/images/logo.png' | url}}" width="200" alt="Kıta Yazılım Logo"/></a>
+        <a class="navbar-brand" href="/"><img src="{{'/assets/images/logo.webp' | url}}" width="200" height="73" alt="Kıta Yazılım Logo"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span>
           <i class="fa fa-2x fa-bars"></i>
@@ -64,7 +64,9 @@
         <div class="row mb-5">
           <div class="col-md pt-5">
             <div class="ftco-footer-widget pt-md-5 mb-4">
-              <h2 class="ftco-heading-2">{{collections.anasayfa[0].data.hakkimizda.hakkimiz}}</h2>
+              <h2 class="ftco-heading-2">
+                <img src="{{'/assets/images/logo-light.webp' | url}}" width="250" height="67" alt="Kıta Yazılım Logo"/>
+              </h2>
               <p>{{collections.anasayfa[0].data.hakkimizda.hakkimizkisayazi}}</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                 {%- for social in sitedata.socials -%}
@@ -79,51 +81,28 @@
           </div>
           <div class="col-md pt-5">
             <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Help Desk</h2>
+              <h2 class="ftco-heading-2 lang" key="hizlimenu">Hızlı Menü</h2>
               <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="py-2 d-block">Customer Care</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Legal Help</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Services</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Privacy and Policy</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Refund Policy</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Call Us</a>
-                </li>
+                {% set navPages = collections.all | eleventyNavigation %}
+                {%- for item in navPages -%}
+                  <li>
+                    <a href="{{item.url | url}}" class="py-2 d-block lang" key="{{item.aka}}">{{item.title}}</a>
+                  </li>
+                {%- endfor -%}
               </ul>
             </div>
           </div>
           <div class="col-md pt-5">
             <div class="ftco-footer-widget pt-md-5 mb-4">
-              <h2 class="ftco-heading-2">Recent Courses</h2>
+              <h2 class="ftco-heading-2 lang" key="urunler">Ürünlerimiz</h2>
               <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="py-2 d-block">Computer Engineering</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Web Design</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Business Studies</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Civil Engineering</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Computer Technician</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Web Developer</a>
-                </li>
+                {% set urunler = collections.Urunler %}
+                {%- for item in urunler -%}
+
+                  <li>
+                    <a href="{{item.url | url}}" class="py-2 d-block">{{item.data.title}}</a>
+                  </li>
+                {%- endfor -%}
               </ul>
             </div>
           </div>

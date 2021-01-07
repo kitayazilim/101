@@ -49,13 +49,21 @@ var arrLang = {
     'kurumsal': 'Kurumsal',
     'hakkimiz': 'Hakkımızda',
     'urunler': 'Ürünlerimiz',
-    'urundetay': 'Ürün Detay',
     'hizmetler': 'Hizmetlerimiz',
     'blog': 'Blog',
     'basin': 'Basında Biz',
     'iletisim': 'İletişim',
 
-    'sizinihtiyaciniz': 'Sizin İhtiyacınız Hangsi?',
+    //layout
+    'hizlimenu': 'Hızlı Menü',
+
+    'welcome': 'Kıta Yazılıma hoş geldiniz.',
+    'heroheader': 'Yazılım Çözümleri ve Destek Hizmetleri',
+    'heroalt': 'Satış öncesi ve sonrası her zaman firmanızın yanında olmaya devam ediyoruz',
+    '': '',
+
+
+    'sizinihtiyaciniz': 'Sizin İhtiyacınız Hangisi?',
     'hizmetlerimiz': 'Hizmetlerimiz',
 
     //hakkımızda
@@ -66,8 +74,15 @@ var arrLang = {
 
     //ürünlerimiz
     'urunlerimiz': 'Ürünlerimiz',
+    'urundetay': 'Ürün Detayı',
     'magazaziyaret': 'Mağazamızı Ziyaret Edin',
     'tumurunler': 'Tüm Ürünleri Göster',
+
+    //Bloglar
+    'sonbloglar': 'Son Yazılan Bloglar',
+    'bloglar': 'Blog Yazıları',
+    'blogdetay': 'Blog Detayı',
+    'dahafazla': 'Deha Fazla',
 
     'sizdengelenler': 'Sizden Gelenler',
     'nedediler': 'Ne Söylediler?',
@@ -102,11 +117,18 @@ var arrLang = {
     'hakkimiz': 'About Us',
     'urunler': 'Our Products',
     'urundetay': 'Product Detail',
-    'galeri': 'Gallery',
+    'hizmetler': 'Our Services',
     'vizyon': 'VISION & MISSION',
     'kalite': 'QUALİTY POLICY',
     'cevre': 'EOHS',
     'iletisim': 'Contact',
+
+    //layout
+    'hizlimenu': 'Quick Menu',
+
+    'welcome': 'Welcome to Kıta Software.',
+    'heroheader': 'Software Solutions and Support Services',
+    'heroalt': 'We are continue to be with your company before and after sales.',
 
     //slaytlar
     'slide1h1': 'Fresh & Natural',
@@ -141,6 +163,9 @@ var arrLang = {
 
     'bizeulasin': 'Contact Us',
     'iletisimalt': 'Its our pleasure to welcome you.',
+
+    'referanslaralt': 'They Preferred Us',
+    'referanslarimiz': 'Our References',
 
     //Bloglar
     'bloglar': 'Blog Yazıları',

@@ -6,10 +6,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
-
 module.exports = function (eleventyConfig) {
-
-  eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -37,8 +34,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("min", (...numbers) => {
     return Math.min.apply(null, numbers);
   });
-
-
 
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
@@ -68,6 +63,8 @@ module.exports = function (eleventyConfig) {
     // returning an array in addCollection works in Eleventy 0.5.3
     return [...tagSet];
   });
+
+  eleventyConfig.addPassthroughCopy("assets");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -128,9 +125,4 @@ module.exports = function (eleventyConfig) {
       output: "_site"
     }
   };
-
-
-
 };
-
-
