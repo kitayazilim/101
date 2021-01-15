@@ -130,8 +130,30 @@ referanslar:
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
+
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p> #}
 
+<style>
+  .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+  }
+
+  .modal-body {
+    position: relative;
+    padding: 0;
+  }
+  .close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1;
+  }
+</style>
 <div class="hero-wrap js-fullheight" style="background-image: url('{{'assets/images/bg_1.webp' | url}}');">
   <div style="background-color: rgb(0,0,0, 0.3); position:absolute; width:100%; height:100%"></div>
   <div class="overlay"></div>
@@ -285,31 +307,17 @@ referanslar:
       <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
         <div class="w-100 mb-4 mb-md-0">
           <span class="subheading">Odoo</span>
-          <h2 class="mb-4"><span>Odoo</span> ile İşletmenizi Yönetmek İçin
-İhtiyaç Duyacağınız Tek Yazılım</h2>
+          <h2 class="mb-4">
+            <span>Odoo</span>
+            ile İşletmenizi Yönetmek İçin İhtiyaç Duyacağınız Tek Yazılım</h2>
           <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
           <div class="d-flex video-image align-items-center mt-md-4">
-            <a data-toggle="modal" data-target="#exampleModal" class="video img d-flex align-items-center justify-content-center" style="background-image: url({{'/assets/images/homepage-desktop.png' | url}});">
+            <a data-toggle="modal" data-src="https://www.youtube.com/embed/CP96yVnXNrY" data-target="#myModal" class="video img d-flex align-items-center justify-content-center video-btn" style="background-image: url({{'/assets/images/homepage-desktop.png' | url}});">
               <span class="fa fa-play-circle"></span>
             </a>
             <h4 class="ml-4">Learn anything from StudyLab, Watch video</h4>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">                    
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/CP96yVnXNrY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>            
           </div>
         </div>
       </div>
@@ -317,9 +325,9 @@ referanslar:
         <div class="row">
           <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
             <div class="services">
-              <div class="icon d-flex align-items-center justify-content-center" style="margin-bottom:12px" >
-                <img src="{{'/assets/images/ik.png' | url}}" width="70" /> 
-                </div>
+              <div class="icon d-flex align-items-center justify-content-center" style="margin-bottom:12px">
+                <img src="{{'/assets/images/ik.png' | url}}" width="70"/>
+              </div>
               <div class="media-body">
                 <h3 class="heading mb-3">İnsan kaynakları</h3>
                 <p>A small river named Duden flows by their place and supplies</p>
@@ -328,9 +336,9 @@ referanslar:
           </div>
           <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
             <div class="services">
-              <div class="icon icon-2 d-flex align-items-center justify-content-center" style="margin-bottom:12px" >
-                <<img src="{{'/assets/images/finans.png' | url}}" width="70" /> 
-                </div>
+              <div class="icon icon-2 d-flex align-items-center justify-content-center" style="margin-bottom:12px">
+                <img src="{{'/assets/images/finans.png' | url}}" width="70"/>
+              </div>
               <div class="media-body">
                 <h3 class="heading mb-3">Finans ve Muhasebe</h3>
                 <p>A small river named Duden flows by their place and supplies</p>
@@ -339,9 +347,9 @@ referanslar:
           </div>
           <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
             <div class="services">
-              <div class="icon icon-3 d-flex align-items-center justify-content-center" style="margin-bottom:12px" >
-                <img src="{{'/assets/images/satis.png' | url}}" width="70" /> 
-                </div>
+              <div class="icon icon-3 d-flex align-items-center justify-content-center" style="margin-bottom:12px">
+                <img src="{{'/assets/images/satis.png' | url}}" width="70"/>
+              </div>
               <div class="media-body">
                 <h3 class="heading mb-3">Satış ve CRM</h3>
                 <p>A small river named Duden flows by their place and supplies</p>
@@ -350,9 +358,9 @@ referanslar:
           </div>
           <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
             <div class="services">
-              <div class="icon icon-4 d-flex align-items-center justify-content-center" style="margin-bottom:12px" >
-                <img src="{{'/assets/images/üretim.png' | url}}" width="70" /> 
-                </div>
+              <div class="icon icon-4 d-flex align-items-center justify-content-center" style="margin-bottom:12px">
+                <img src="{{'/assets/images/üretim.png' | url}}" width="70"/>
+              </div>
               <div class="media-body">
                 <h3 class="heading mb-3">Üretim Ve Operasyon</h3>
                 <p>A small river named Duden flows by their place and supplies</p>
@@ -364,43 +372,7 @@ referanslar:
     </div>
   </div>
 </section>
-
-{# <section class="ftco-section testimony-section bg-light">
-  <div class="overlay" style="background-image: url({{'/assets/images/bg_2.webp' | url}});"></div>
-  <div class="container">
-    <div class="row pb-4">
-      <div class="col-md-7 heading-section ftco-animate">
-        <span class="subheading lang" key="sizdengelenler">{{sizdengelenler}}</span>
-        <h2 class="mb-4 lang" key="nedediler">{{testimonal}}</h2>
-      </div>
-    </div>
-  </div>
-  <div class="container container-2">
-    <div class="row ftco-animate">
-      <div class="col-md-12">
-        <div class="carousel-testimony owl-carousel">
-          {%- for testi in testimonals -%}
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="mb-4" style="height:100px">{{testi.soylenen}}</p>
-                  <div class="d-flex align-items-center">
-                    <div class="user-img" style="background-image: url({{'/assets/images/person_1.jpg' | url}})"></div>
-                    <div class="pl-3">
-                      <p class="name">{{testi.soyleyen}}</p>
-                      <span class="position">{{testi.meslek}}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          {%- endfor -%}
-        </div>
-      </div>
-    </div>
-  </div>
-</section> #}
-
+{# <section class="ftco-section testimony-section bg-light"> <div class="overlay" style="background-image: url({{'/assets/images/bg_2.webp' | url}});"></div> <div class="container"> <div class="row pb-4"> <div class="col-md-7 heading-section ftco-animate"> <span class="subheading lang" key="sizdengelenler">{{sizdengelenler}}</span> <h2 class="mb-4 lang" key="nedediler">{{testimonal}}</h2> </div> </div> </div> <div class="container container-2"> <div class="row ftco-animate"> <div class="col-md-12"> <div class="carousel-testimony owl-carousel"> {%- for testi in testimonals -%} <div class="item"> <div class="testimony-wrap py-4"> <div class="text"> <p class="mb-4" style="height:100px">{{testi.soylenen}}</p> <div class="d-flex align-items-center"> <div class="user-img" style="background-image: url({{'/assets/images/person_1.jpg' | url}})"></div> <div class="pl-3"> <p class="name">{{testi.soyleyen}}</p> <span class="position">{{testi.meslek}}</span> </div> </div> </div> </div> </div> {%- endfor -%} </div> </div> </div> </div> </section> #}
 <section class="ftco-intro ftco-section ftco-no-pb">
   <div class="container">
     <div class="row justify-content-center">
@@ -417,7 +389,6 @@ referanslar:
     </div>
   </div>
 </section>
-
 <section class="ftco-section ftco-about img">
   <div class="container">
     <div class="row d-flex">
@@ -432,14 +403,15 @@ referanslar:
           <div class="col-md-6 pl-md-5 py-5">
             <div class="row justify-content-start pb-3">
               <div class="col-md-12 heading-section ftco-animate">
-                <span class="subheading">E-donüşüm  Entegrasyonlarında yanınızdayız!</span>
+                <span class="subheading">E-donüşüm Entegrasyonlarında yanınızdayız!</span>
                 <h2 class="mb-4">e-Fatura ve e-arşiv nedir?</h2>
-                <p>Elektronik Fatura (e-fatura ve e-arşiv), kağıt fatura ile aynı hukuki niteliklere sahip, elektronik ortamda gönderilip alınarak hem alıcıya hem de satıcıya zaman ve maliyet tasarrufu sağlayan bir fatura türüdür. </p>
-                 <ul>
-                <li>Kolay Entegrasyon</li>
-                <li>Esnek Kullanım</li>
-                <li>Kesintisiz Erişim</li>
-                </ul> 
+                <p>Elektronik Fatura (e-fatura ve e-arşiv), kağıt fatura ile aynı hukuki niteliklere sahip, elektronik ortamda gönderilip alınarak hem alıcıya hem de satıcıya zaman ve maliyet tasarrufu sağlayan bir fatura türüdür.
+                </p>
+                <ul>
+                  <li>Kolay Entegrasyon</li>
+                  <li>Esnek Kullanım</li>
+                  <li>Kesintisiz Erişim</li>
+                </ul>
                 <p>
                   <a href="#" class="btn btn-primary">Daha fazla</a>
                 </p>
@@ -451,9 +423,6 @@ referanslar:
     </div>
   </div>
 </section>
-
-
-
 <section class="ftco-section">
   <div class="container">
     <div class="row justify-content-center pb-4">
@@ -468,8 +437,7 @@ referanslar:
           <a class="course-category img d-flex align-items-center justify-content-center" loading="lazy" style="background-image: url({{ref.image | url}});">
             {# <div style="position:absolute; width:100%; height:100%; background-color: rgb(0, 0, 0, 0.5); border-radius:50%; z-index:-1"></div> #}
             <div class="text w-100 text-center">
-              {# <h3>{{ref.firma}}</h3>
-              <span>{{ref.sektor}}</span> #}
+              {# <h3>{{ref.firma}}</h3> <span>{{ref.sektor}}</span> #}
             </div>
           </a>
         </div>
@@ -477,7 +445,6 @@ referanslar:
     </div>
   </div>
 </section>
-
 <section class="ftco-section bg-light">
   <div class="container">
     <div class="row justify-content-center pb-4">
@@ -515,3 +482,53 @@ referanslar:
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/jquery.min.js' | url }}"></script>
+<script>
+  $(document).ready(function () {
+
+    // Gets the video src from the data-src on each button
+
+    var $videoSrc;
+    $('.video-btn').click(function () {
+      $videoSrc = $(this).data("src");
+    });
+    console.log($videoSrc);
+
+    // when the modal is opened autoplay it
+    $('#myModal').on('shown.bs.modal', function (e) {
+
+      // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+      $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+    })
+
+    // stop playing the youtube video when I close the modal
+    $('#myModal').on('hide.bs.modal', function (e) {
+      // a poor man's stop video
+      $("#video").attr('src', $videoSrc);
+    })
+
+    // document ready
+  });
+</script>
