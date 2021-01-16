@@ -60,29 +60,25 @@ var arrLang = {
     'welcome': 'Kıta Yazılıma hoş geldiniz.',
     'heroheader': 'Yazılım Çözümleri ve Destek Hizmetleri',
     'heroalt': 'Satış öncesi ve sonrası her zaman firmanızın yanında olmaya devam ediyoruz',
-    '': '',
-
 
     'sizinihtiyaciniz': 'Sizin İhtiyacınız Hangisi?',
     'hizmetlerimiz': 'Hizmetlerimiz',
 
     //hakkımızda
     'hakkimizdaaltbaslik': 'Bizi Tanıyın',
-    'hakkimizkisayazi': 'Halen Türkiye’de toptan bal ticaretini devam ettiren firmamız, 2006 yılında Almanya’nın Berlin şehrinde bir paketleme tesisi kurarak faaliyetlerine burada devam etme kararı almıştır.',
     'hakkimizyazi': 'Yazılım sektöründe edinmiş olduğumuz 15 yıllık tecrübemiz ışığında 2018 yılında kurulduk. Kıta Yazılım olarak genç ,yenilikçi, dinamik bir ekipten oluşuyoruz. Sahip olduğumuz bilgi birikimimizi, mühendislik çözümlerimizi ve dinamik yapımızla yaratıcı ve inovatif çözümlerimizi müşteri odaklı yaklaşımımızla birleştiriyoruz. Müşteri memnuniyetimizi en üst düzeye taşımayı gaye ediniyoruz. Bunun için ihtiyacınızı dinliyor, fikirlerinize değer veriyoruz. En uygun metot en az maliyetle hazırladığımız programla, farklı programlarla yürütmek zorunda kaldığınız faaliyetlerinizi tek bir noktada topluyoruz. Şirketlerinizin ve bağlı varlıklarınızın, en iyi şekilde yönetilmesine, üretim sürecinizin planlanmasına katkıda bulunmak istiyoruz. Aynı zamanda firmanızdaki en karmaşık sorunlarınıza çözümler üreterek devam etmekte olan süreçlerinizde de herhangi bir aksamanın meydana gelmesine izin vermeden, kurumunuz için hesaplanabilen sonuçların ortaya çıkmasını amaçlıyoruz.',
     'hakkimizdabuton': 'Daha Fazla',
 
     //ürünlerimiz
     'urunlerimiz': 'Ürünlerimiz',
     'urundetay': 'Ürün Detayı',
-    'magazaziyaret': 'Mağazamızı Ziyaret Edin',
     'tumurunler': 'Tüm Ürünleri Göster',
 
     //Bloglar
     'sonbloglar': 'Son Yazılan Bloglar',
     'bloglar': 'Blog Yazıları',
     'blogdetay': 'Blog Detayı',
-    'dahafazla': 'Deha Fazla',
+    'dahafazla': 'Daha Fazla',
 
     'sizdengelenler': 'Sizden Gelenler',
     'nedediler': 'Ne Söylediler?',
@@ -110,17 +106,12 @@ var arrLang = {
   },
   'en': {
     //navigasyon menü
-    'telefon': 'PHONE',
-    'mail': 'EMAIL',
     'anasayfa': 'Home',
     'kurumsal': 'Cooparate',
     'hakkimiz': 'About Us',
     'urunler': 'Our Products',
     'urundetay': 'Product Detail',
     'hizmetler': 'Our Services',
-    'vizyon': 'VISION & MISSION',
-    'kalite': 'QUALİTY POLICY',
-    'cevre': 'EOHS',
     'iletisim': 'Contact',
 
     //layout
@@ -130,47 +121,35 @@ var arrLang = {
     'heroheader': 'Software Solutions and Support Services',
     'heroalt': 'We are continue to be with your company before and after sales.',
 
-    //slaytlar
-    'slide1h1': 'Fresh & Natural',
-    'slide1subject': 'Beekeeping',
-    'slide1content': 'Everything is natural and everything is the best.',
-    'slide1linktext': 'Detail',
-    'slide1link2text': 'Go to shop',
+    'sizinihtiyaciniz': 'Which one you need?',
+    'hizmetlerimiz': 'Our Services',
 
-    'slide2h1': 'Fresh & Natural',
-    'slide2subject': 'Beekeeping',
-    'slide2content': 'Everything is natural and everything is the best.',
-    'slide2linktext': 'Detail',
-    'slide2link2text': 'Go to shop',
-
-    'slide3h1': 'Fresh & Natural',
-    'slide3subject': 'Beekeeping',
-    'slide3content': 'Everything is natural and everything is the best.',
-    'slide3linktext': 'Detail',
-    'slide3link2text': 'Go to shop',
-
+    //hakkımızda
     'hakkimizdaaltbaslik': 'Who We Are',
     'hakkimizbaslik': 'Trust and Experience of years',
     'firmatarihi': 'Company History',
-    'firmatarihikisayazi': 'Our company has been a wholesale supplier and retail trader of distinguished honeys of Mugla, Marmariz, Koycegiz and Eastern Anatolia since 1982.',
-    'hakkimizkisayazi': 'Halen Türkiye’de toptan bal ticaretini devam ettiren firmamız, 2006 yılında Almanya’nın Berlin şehrinde bir paketleme tesisi kurarak faaliyetlerine burada devam etme kararı almıştır.',
     'hakkimizuzunyazi': 'Our company has been a wholesale supplier and retail trader of distinguished honeys of Mugla, Marmariz, Koycegiz and Eastern Anatolia since 1982. In addition to our existing honey wholesale in Turkey, we decided to establish another independent production plant for our spread in Berlin-Germany in 2006. We did so to be able to offer a high quality product, ensure short distance to the market and also to the end consumer as well as keeping time and effort of transportation as efficiently as possible to supply our client’s orders quickly and continually. For our products we use only selected honey such as pine honey from Marmaris region, high quality flower honeys from Eastern Anatolia uplands or comb honeys from several regions of the world. By enrichment of glucose with high quality honey we produce a spread which meets the taste especially of Turks, Arabs and other target groups. Our products have been put on the market in all parts of Germany and Europe and they taken their part in shelves in distinguished shops with ASBAL brand.',
     'hakkimizdabuton': 'Learn More',
 
     'urunlerimiz': 'Our Products',
-    'magazaziyaret': 'Visit Our Store',
     'tumurunler': 'Tüm Ürünleri Göster',
 
     'bizeulasin': 'Contact Us',
+    'iletisimdekal': 'Stay Connected',
     'iletisimalt': 'Its our pleasure to welcome you.',
+    'ofis': 'Office',
+    'merkez': 'Head Office',
+    'telefon': 'Phone',
+    'mail': 'E-mail',
 
     'referanslaralt': 'They Preferred Us',
     'referanslarimiz': 'Our References',
 
     //Bloglar
-    'bloglar': 'Blog Yazıları',
-    'blogdetay': 'Blog Detayı',
-    'dahafazla': 'Deha Fazla',
+    'sonbloglar': 'Latest Blog Posts',
+    'bloglar': 'Blogs',
+    'blogdetay': 'Blog Detail',
+    'dahafazla': 'Read More',
 
     // iletişim Formu
     'formadi': 'Your Name',
@@ -180,26 +159,6 @@ var arrLang = {
     'formmesaj': 'Your Message',
     'butongonder': 'Send',
 
-    // kurumsal- cevre
-    'cevre_adi': 'Environmental&Occupational Health and Safety',
-    'cevre1': 'Ronesans Teknik adapts making the most of its capabilities to meet the demands of its customers as a principle with its experience in the sector of more than fifteen years.',
-    'cevre2': 'In order to sustain continuity at customer satisfaction, we constantly upgrade our service policies. We will keep on being innovative, pioneering and trustworthy to meet the changing and developing market conditions in a rapid, economical and sterling way.',
-    'cevre3': '',
-
-    // kurumsal- kalite politikası
-    'kalite1': 'Ronesans Teknik adapts making the most of its capabilities to meet the demands of its customers as a principle with its experience in the sector of more than fifteen years.',
-    'kalite2': 'In order to sustain continuity at customer satisfaction, we constantly upgrade our service policies. We will keep on being innovative, pioneering and trustworthy to meet the changing and developing market conditions in a rapid, economical and sterling way.',
-
-    // kurumsal- vizyon misyon
-    'vizyon_adi': 'Our Vision',
-    'misyon_adi': 'Our Mission',
-    'vizyon1': 'Becoming the fastest, most sterling and trustworthy supplier of the sector by making the most of all the resources and data to meet the customers demands.',
-    'misyon1': 'To be able to present a sterling and rapid service at its best, to turn it into a sustainable service policy, to reach an operational excellence and to raise our value in every business we do in order to create a value for our customers.',
-
-    // kurumsal- hakkımızda
-    'hakkimizda1': 'Ronesans Teknik adapts making the most of its capabilities to meet the demands of its customers as a principle with its experience in the sector of more than fifteen years.',
-    'hakkimizda2': 'In order to sustain continuity at customer satisfaction, we constantly upgrade our service policies. We will keep on being innovative, pioneering and trustworthy to meet the changing and developing market conditions in a rapid, economical and sterling way.',
-    'hakkimizda3': '',
   },
   'fr': {
 
