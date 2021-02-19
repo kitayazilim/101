@@ -8478,8 +8478,8 @@ h1, h2, h3, h4, h5,
         background: #4986fc;
         border: 1px solid #4986fc; }
     .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
-      border: 1px solid #e449ad;
-      background: #e449ad !important; }
+      border: 1px solid #1b0e16;
+      background: #364758!important; }
     .ftco-navbar-light .navbar-nav > .nav-item.active > a {
       color: #4986fc; }
     @media (max-width: 991.98px) {
@@ -8612,14 +8612,14 @@ h1, h2, h3, h4, h5,
       width: 100%;
       opacity: .3;
       background: #ce4be8;
-      background: -moz-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+      background: -moz-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
       background: -webkit-gradient(left top, right bottom, color-stop(0%, #ce4be8), color-stop(100%, #207ce5));
-      background: -webkit-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-      background: -o-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-      background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-      background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-      background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-      background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+      background: -webkit-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+      background: -o-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+      background: -ms-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+      background: -webkit-linear-gradient(315deg, #322d33 0%, #207ce5 100%);
+      background: -o-linear-gradient(315deg, #322d33 0%, #207ce5 100%);
+      background: linear-gradient(135deg, #322d33 0%, #207ce5 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 ); }
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 600px; }
@@ -8798,20 +8798,20 @@ h1, h2, h3, h4, h5,
         background: #4986fc;
         color: #fff; }
   .btn.btn-secondary {
-    background: #e449ad !important;
-    border: 1px solid #e449ad !important;
+    background: #364758!important;
+    border: 1px solid #364758!important;
     color: #fff !important; }
     .btn.btn-secondary:hover {
-      border: 1px solid #e449ad;
+      border: 1px solid #1b0e16;
       background: transparent;
-      color: #e449ad; }
+      color: #1b0e16; }
     .btn.btn-secondary.btn-outline-secondary {
-      border: 1px solid #e449ad;
+      border: 1px solid #1b0e16;
       background: transparent;
-      color: #e449ad; }
+      color: #1b0e16; }
       .btn.btn-secondary.btn-outline-secondary:hover {
         border: 1px solid transparent;
-        background: #e449ad;
+        background: #1b0e16;
         color: #fff; }
   .btn.btn-white {
     background: #fff !important;
@@ -8969,7 +8969,7 @@ h1, h2, h3, h4, h5,
       font-size: 40px;
       color: #fff; }
     .services .icon.icon-2 {
-      background: #e449ad; }
+      background: #1b0e16; }
     .services .icon.icon-3 {
       background: #fc9927; }
     .services .icon.icon-4 {
@@ -9291,7 +9291,7 @@ textarea.form-control {
       bottom: 0;
       content: '';
       opacity: .6;
-      background: #e449ad;
+      background: #1b0e16;
       z-index: -1; }
   @media (max-width: 991.98px) {
     .ftco-intro {
@@ -9312,14 +9312,14 @@ textarea.form-control {
   padding: 0 0;
   z-index: 0;
   background: #ce4be8;
-  background: -moz-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+  background: -moz-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, #ce4be8), color-stop(100%, #207ce5));
-  background: -webkit-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-  background: -o-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-  background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-  background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-  background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-  background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+  background: -webkit-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+  background: -o-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+  background: -ms-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+  background: -webkit-linear-gradient(315deg, #322d33 0%, #207ce5 100%);
+  background: -o-linear-gradient(315deg, #322d33 0%, #207ce5 100%);
+  background: linear-gradient(135deg, #322d33 0%, #207ce5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 ); }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -9602,14 +9602,14 @@ textarea.form-control {
     opacity: .8;
     background: #000000;
     background: #ce4be8;
-    background: -moz-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+    background: -moz-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, #ce4be8), color-stop(100%, #207ce5));
-    background: -webkit-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-    background: -o-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-    background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-    background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-    background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-    background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+    background: -webkit-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+    background: -o-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+    background: -ms-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+    background: -webkit-linear-gradient(315deg, #322d33 0%, #207ce5 100%);
+    background: -o-linear-gradient(315deg, #322d33 0%, #207ce5 100%);
+    background: linear-gradient(135deg, #322d33 0%, #207ce5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 ); }
 
 @media (max-width: 1199.98px) {
@@ -9706,7 +9706,7 @@ textarea.form-control {
     margin-bottom: 15px; }
   .block-23 ul li span {
     color: rgba(255, 255, 255, 0.7);
-    color: #e449ad; }
+    color: #1b0e16; }
   .block-23 ul li .icon, .block-23 ul li .text {
     display: table-cell;
     vertical-align: top;
@@ -9736,14 +9736,14 @@ textarea.form-control {
     .block-27 ul li.active a, .block-27 ul li.active span, .block-27 ul li:hover a, .block-27 ul li:hover span {
       background: #4986fc;
       background: #ce4be8;
-      background: -moz-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+      background: -moz-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
       background: -webkit-gradient(left top, right bottom, color-stop(0%, #ce4be8), color-stop(100%, #207ce5));
-      background: -webkit-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-      background: -o-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-      background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
-      background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-      background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-      background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+      background: -webkit-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+      background: -o-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+      background: -ms-linear-gradient(-45deg, #322d33 0%, #207ce5 100%);
+      background: -webkit-linear-gradient(315deg, #322d33 0%, #207ce5 100%);
+      background: -o-linear-gradient(315deg, #322d33 0%, #207ce5 100%);
+      background: linear-gradient(135deg, #322d33 0%, #207ce5 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 );
       color: #fff;
       border: 1px solid transparent; }
@@ -9840,7 +9840,7 @@ textarea.form-control {
   border-radius: 4px;
   color: #fff;
   font-size: 11px;
-  background: #e449ad; }
+  background: #1b0e16; }
 
 .comment-form-wrap {
   clear: both; }
@@ -10112,5 +10112,14 @@ textarea.form-control {
         position: absolute;
         right: 50px;
         width: 105px;
+      }
+    }
+
+    @media (max-width: 405px) {
+      .lang-block{
+        position: absolute;
+        right: 0px;
+        width: 105px;
+        top:-30px;
       }
     }

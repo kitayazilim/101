@@ -1,21 +1,21 @@
 {
   "title": "Kıta Yazılım Çözümleri",
-  "url": "http://kitayazilim.com/",
+  "url": "https://kitayazilim.com/",
   "description": "Yazılımda doğru tercih. Kıta yazılım herzaman yanınızda.",
   "keywords": "yazılım, software, python, django, asp, .net, c#, html, css, javascipt, js, bootstrap,entityframework",
   "feed": {
     "subtitle": "Kıta Yazılım Çözümleri.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "http://kitayazilim.com/"
+    "id": "https://kitayazilim.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "http://kitayazilim.com/feed/feed.json"
+    "url": "https://kitayazilim.com/feed/feed.json"
   },
   "author": {
     "name": "Kıta Yazılım Çözümleri",
     "email": "info@kitayazilim.com",
-    "url": "http://kitayazilim.com/"
+    "url": "https://kitayazilim.com/"
   }
 }

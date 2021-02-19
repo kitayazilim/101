@@ -2,7 +2,7 @@
     "author": "Kıta Yazılım & Alelma Elektronik",
     "sitename": "Kıta Yazılım Çözümleri",
     "email": "info@kitayazilim.com",
-    "tel": "012326465656",
+    "tel": "+905333575984",
     "fax": "012345678923",
     "adres": "Paşamandıra Mah. Demirkapı Cad. No:1 Beykoz/İstanbul",
     "adres2": "Esentepe Mahallesi Ilgaz Sokak NO:37/A Kartal/İstanbul",
@@ -33,6 +33,11 @@
             "name": "Facebook",
             "url": "https://www.facebook.com/adresiniz",
             "icon": "fa-facebook-f"
+        },
+        {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/company/kita-yazilim/",
+            "icon": "fa-linkedin"
         },
         {
             "name": "Twitter",

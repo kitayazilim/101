@@ -47,85 +47,34 @@ layout: layouts/base.njk
             <!-- .col-md-8 -->
             <div class="col-lg-4 sidebar ftco-animate pl-md-4 py-md-5">
                 <div class="sidebar-box ftco-animate">
-                    <h3>Recent Blog</h3>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading">
-                                <a href="#">Even the all-powerful Pointing has no control about the blind texts</a>
-                            </h3>
-                            <div class="meta">
-                                <div>
-                                    <a href="#">
-                                        <span class="fa fa-calendar"></span>
-                                        Sept. 17, 2020</a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="fa fa-user"></span>
-                                        Admin</a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="fa fa-comment"></span>
-                                        19</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading">
-                                <a href="#">Even the all-powerful Pointing has no control about the blind texts</a>
-                            </h3>
-                            <div class="meta">
-                                <div>
-                                    <a href="#">
-                                        <span class="fa fa-calendar"></span>
-                                        Sept. 17, 2020</a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="fa fa-user"></span>
-                                        Admin</a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="fa fa-comment"></span>
-                                        19</a>
+                    <h3 class="lang" key="bloglar">Bloglar</h3>
+
+                    {% set bloglar = collections.Bloglar %}
+                    {%- for item in bloglar -%}
+                        <div class="block-21 mb-4 d-flex">
+                            <a class="blog-img mr-4" style="background-image: url({{item.data.image | url}});"></a>
+                            <div class="text">
+                                <h3 class="heading">
+                                    <a href="{{item.url}}">{{item.data.title}}</a>
+                                </h3>
+                                <div class="meta">
+                                    <div>
+                                        <a href="#">
+                                            <span class="fa fa-calendar"></span>
+                                            {{item.data.tarih}}</a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <span class="fa fa-user"></span>
+                                            {{item.data.yazan}}</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading">
-                                <a href="#">Even the all-powerful Pointing has no control about the blind texts</a>
-                            </h3>
-                            <div class="meta">
-                                <div>
-                                    <a href="#">
-                                        <span class="fa fa-calendar"></span>
-                                        Sept. 17, 2020</a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="fa fa-user"></span>
-                                        Admin</a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="fa fa-comment"></span>
-                                        19</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {%- endfor -%}
                 </div>
 
-                <div class="sidebar-box ftco-animate">
+                {# <div class="sidebar-box ftco-animate">
                     <h3>Tag Cloud</h3>
                     <div class="tagcloud">
                         <a href="#" class="tag-cloud-link">design</a>
@@ -137,12 +86,12 @@ layout: layouts/base.njk
                         <a href="#" class="tag-cloud-link">pen</a>
                         <a href="#" class="tag-cloud-link">teacher</a>
                     </div>
-                </div>
+                </div> #}
 
-                <div class="sidebar-box ftco-animate">
+                {# <div class="sidebar-box ftco-animate">
                     <h3>Paragraph</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
-                </div>
+                </div> #}
             </div>
         </div>
     </div>
