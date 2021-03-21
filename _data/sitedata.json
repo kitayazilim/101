@@ -25,23 +25,23 @@
     ],
     "socials": [
         {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/adres/",
-            "icon": "fa-instagram"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/adresiniz",
-            "icon": "fa-facebook-f"
-        },
-        {
             "name": "Linkedin",
             "url": "https://www.linkedin.com/company/kita-yazilim/",
             "icon": "fa-linkedin"
+        },        
+        {
+            "name": "Facebook",
+            "url": "",
+            "icon": "fa-facebook-f"
         },
         {
+            "name": "Instagram",
+            "url": "",
+            "icon": "fa-instagram"
+        },        
+        {
             "name": "Twitter",
-            "url": "https://www.twitter.com/channel/adresiniz",
+            "url": "",
             "icon": "fa-twitter"
         }
     ]

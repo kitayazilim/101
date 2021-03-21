@@ -3,8 +3,8 @@ layout: layouts/urun.njk
 title: Özel Yazılım
 kategori: Yazılım
 image: /assets/images/urunler/servis-stok.jpg
-kisaozet: Servis kayıtlarını stok yönetimi ve faturalama işlemlerinin yürütülebileceği özgün yazılım e-fatura entegrasyonu ile geliyor
-description: ürün açıklaması detaylı şekilde
+kisaozet: Özel yazılım, firmaların kendi ihtiyaçları doğrultusunda, kendi süreçlerine uygun olarak tasarlanan ve yazılımı bu yönde yapılan programlara denmektedir.
+description: Özel Yazılım Hizmetleri 
 ---
 
 <h5>Özel Yazılım Nedir?</h5>
