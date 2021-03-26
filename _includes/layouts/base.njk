@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="tr">
   <head>
-    <title class="lang" key="title">{{sitedata.sitename}}</title>
+    <title class="lang" key="title">{{ sitedata.sitename }}</title>
     <meta charset="utf-8">
-    <meta name="description" content="{{metadata.description}}">
-    <meta name="keywords" content="{{metadata.keywords}}">
-    <meta name="author" content="{{metadata.author.name}} - {{metadata.author.email}}">
+    <meta name="description" content="{{ metadata.description }}">
+    <meta name="keywords" content="{{ metadata.keywords }}">
+    <meta name="author" content="{{ metadata.author.name }} - {{ metadata.author.email }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="{{ '/assets/images/favico.png' | url }}">
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/animate.css' | url }}">
@@ -17,62 +16,68 @@
     <link rel="stylesheet" href="{{ '/assets/css/magnific-popup.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/jquery.timepicker.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/flaticon.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+    <link
+    rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTQ2EF5P9R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-HTQ2EF5P9R');
+    </script>
   </head>
   <!-- page wrapper -->
   <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
         <div style="position:absolute; top:35px; right:10px;">
           <ul class="lang-block" style="list-style-type:none; padding-inline-start: 0px">
             <li style="margin: 0 2px; float:left">
-              <a class="translate" id="tr" style="cursor:pointer"><img src="{{'/assets/images/tr.png' | url}}" width="30" height="30" alt="tr"></a>
+              <a class="translate" id="tr" style="cursor:pointer"><img src="{{ '/assets/images/tr.png' | url }}" width="30" height="30" alt="tr"></a>
             </li>
             {# <li style="margin: 0 2px; float:left">
-              <a class="translate" id="de" style="cursor:pointer"><img src="{{'/assets/images/de.png' | url}}" width="30" height="30" alt="de"></a>
-            </li> #}
+                          <a class="translate" id="de" style="cursor:pointer"><img src="{{'/assets/images/de.png' | url}}" width="30" height="30" alt="de"></a>
+                        </li> #}
             <li style="margin: 0 2px; float:left">
-              <a class="translate" id="en" style="cursor:pointer"><img src="{{'/assets/images/en.png' | url}}" width="30" height="30" alt="en"></a>
+              <a class="translate" id="en" style="cursor:pointer"><img src="{{ '/assets/images/en.png' | url }}" width="30" height="30" alt="en"></a>
             </li>
           </ul>
         </div>
-        <a class="navbar-brand" href="/"><img src="{{'/assets/images/logo.webp' | url}}" width="200" height="73" alt="Kıta Yazılım Logo"/></a>
+        <a class="navbar-brand" href="/"><img src="{{ '/assets/images/logo.webp' | url }}" width="200" height="73" alt="Kıta Yazılım Logo"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span>
           <i class="fa fa-2x fa-bars"></i>
         </button>
-
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
             {% set navPages = collections.all | eleventyNavigation %}
             {%- for item in navPages -%}
               <li class="nav-item">
-                <a href="{{item.url | url}}" class="nav-link lang" key="{{item.aka}}">{{item.title}}</a>
+                <a href="{{ item.url | url }}" class="nav-link lang" key="{{ item.aka }}">{{ item.title }}</a>
               </li>
             {%- endfor -%}
           </ul>
         </div>
-
       </div>
     </nav>
-
-    {{content | safe}}
-
+    {{ content | safe }}
     <footer class="ftco-footer ftco-no-pt">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md pt-5">
             <div class="ftco-footer-widget pt-md-5 mb-4">
               <h2 class="ftco-heading-2">
-                <img src="{{'/assets/images/logo-light.webp' | url}}" width="250" height="67" alt="Kıta Yazılım Logo"/>
+                <img src="{{ '/assets/images/logo-light.webp' | url }}" width="250" height="67" alt="Kıta Yazılım Logo"/>
               </h2>
-              <p>{{collections.anasayfa[0].data.hakkimizda.hakkimizkisayazi}}</p>
+              <p>{{ collections.anasayfa[0].data.hakkimizda.hakkimizkisayazi }}</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                 {%- for social in sitedata.socials -%}
                   <li class="ftco-animate">
-                    <a href="{{social.url | url}}" title="{{social.name}}" rel="noreferrer" target="_blank">
-                      <span class="fa {{social.icon}}"></span>
+                    <a href="{{ social.url | url }}" title="{{ social.name }}" rel="noreferrer" target="_blank">
+                      <span class="fa {{ social.icon }}"></span>
                     </a>
                   </li>
                 {%- endfor -%}
@@ -86,7 +91,7 @@
                 {% set navPages = collections.all | eleventyNavigation %}
                 {%- for item in navPages -%}
                   <li>
-                    <a href="{{item.url | url}}" class="py-2 d-block lang" key="{{item.aka}}">{{item.title}}</a>
+                    <a href="{{ item.url | url }}" class="py-2 d-block lang" key="{{ item.aka }}">{{ item.title }}</a>
                   </li>
                 {%- endfor -%}
               </ul>
@@ -98,9 +103,8 @@
               <ul class="list-unstyled">
                 {% set urunler = collections.Urunler %}
                 {%- for item in urunler -%}
-
                   <li>
-                    <a href="{{item.url | url}}" class="py-2 d-block">{{item.data.title}}</a>
+                    <a href="{{ item.url | url }}" class="py-2 d-block">{{ item.data.title }}</a>
                   </li>
                 {%- endfor -%}
               </ul>
@@ -108,18 +112,24 @@
           </div>
           <div class="col-md pt-5">
             <div class="ftco-footer-widget pt-md-5 mb-4">
-              <h2 class="lang" key="bizeulasin">{{collections.contact[0].data.bizeulasin}}</h2>
+              <h2 class="lang" key="bizeulasin">{{ collections.contact[0].data.bizeulasin }}</h2>
               <div class="block-23 mb-3">
                 <ul>
                   <li>
-                    <span class="icon fa fa-map-marker"></span><span class="text">{{sitedata.adres}}</span></li>
-                  <li>
-                    <a href="tel:{{sitedata.tel}}">
-                      <span class="icon fa fa-phone"></span><span class="text">{{sitedata.tel}}</span></a>
+                    <span class="icon fa fa-map-marker"></span>
+                    <span class="text">{{ sitedata.adres }}</span>
                   </li>
                   <li>
-                    <a href="mailto:{{sitedata.email}}">
-                      <span class="icon fa fa-paper-plane"></span><span class="text">{{sitedata.email}}</span></a>
+                    <a href="tel:{{ sitedata.tel }}">
+                      <span class="icon fa fa-phone"></span>
+                      <span class="text">{{ sitedata.tel }}</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:{{ sitedata.email }}">
+                      <span class="icon fa fa-paper-plane"></span>
+                      <span class="text">{{ sitedata.email }}</span>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -130,20 +140,18 @@
           <div class="col-md-12 text-center">
             <p>
               {# &copy;<script>
-                document.write(new Date().getFullYear());
-              </script> #}
-              {{sitedata.copyright | safe}}
+                              document.write(new Date().getFullYear());
+                            </script> #}
+              {{ sitedata.copyright | safe }}
             </p>
           </div>
         </div>
       </div>
     </footer>
-
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen">
       <svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
     </div>
-
     <script src="{{ '/assets/js/jquery.min.js' | url }}"></script>
     <script src="{{ '/assets/js/jquery-migrate-3.0.1.min.js' | url }}"></script>
     <script src="{{ '/assets/js/popper.min.js' | url }}"></script>
@@ -164,7 +172,6 @@
         document.documentElement.lang = lang;
       });
     </script>
-
   </body>
   <!-- End of .page_wrapper -->
 </html>
